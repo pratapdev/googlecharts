@@ -1,0 +1,23 @@
+.chart-clss
+{
+    width: auto; 
+    height: auto;
+    /* border:1px solid #def; */
+}
+
+.btns button{
+    padding: 5px;
+    color: #fff;
+    background: #3366cc;
+    border: none;
+    /* margin-right: 0.5px; */
+    border-radius: 0.5px;
+    border-right: 1px solid #fff;
+    
+}
+
+.chart-cls1 {
+    padding: 20px 0;
+      height: 800px;
+    border: 2px solid #00A5DF;
+  }

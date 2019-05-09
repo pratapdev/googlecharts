@@ -1,9 +1,22 @@
-<google-chart #chart
-   [title]="title"
-   [type]="type"
-   [data]="data"
-   [columnNames]="columnNames"
-   [options]="options"
-   [width]="width"
-   [height]="height">
-</google-chart>
+<!-- <select (change)="changeChart()" [(ngModel)]="selectedOpteration">
+  <option *ngFor="let opt dropDownOptions" value="opt"></option>
+</select> -->
+
+<div class="btns">
+    <button (click)="drawChart('drawPieChart')">pie chart</button>
+    <button (click)="drawChart('drawBarChart')">bar chart</button>
+    <!-- <button (click)="drawChart('drawBarChart')">bar chart</button>
+    <button (click)="drawChart('drawBarChart')">bar chart</button>
+    <button (click)="drawChart('drawBarChart')">bar chart</button>
+    <button (click)="drawChart('drawBarChart')">bar chart</button> -->
+</div>
+
+<div style="width: 85.5%;
+height: 244px;
+border: 1px solid #3366cc;
+padding: 100px;">
+<div [hidden]="isPie" id="pieChart" #pieChart class="chart-cls" ></div>
+<div [hidden]="isBar" id="barChart" #barChart class="chart-cls" ></div>
+<div [hidden]="isGauge"  id="gaugeChart" #gaugeChart class="chart-cls" ></div>
+<div [hidden]="isArea" id="areaChart" #areaChart class="chart-cls" ></div>
+</div>

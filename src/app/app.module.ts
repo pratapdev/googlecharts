@@ -1,3 +1,4 @@
+import { GoogleChart } from './angular-google-chart.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { GoogleChartsModule } from 'angular-google-charts';
@@ -7,7 +8,7 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,GoogleChart
   ],
   imports: [
     BrowserModule,
